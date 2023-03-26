@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Header{
+    background-color: white;
+}
+
+
+/* Value Cou    nt Display   */
+.GameContainer{
+    position: relative;
+    top:65px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: rgb(70, 79, 87);
+    width: 500px;
+    box-shadow: -1px -1px 40px 1px rgb(2, 94, 255);
+    border-radius:10px;
+    
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    
+    
+}
+
+
+.CountDisplay {
+    
+    
+    width: 500px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-color: rgb(18, 7, 7);
+    border-width: 3.5px;
+    height: 120px;
+    border-bottom:none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.Value {
+    font-family: "Work Sans","Federant", cursive;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+/* .GameButtonPosition{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; * */
+.buttonpos {
+    z-index: 5;
+  position: relative;
+    top:150px;
+    left:50%;
+    transform:translateX(-50%);
+  cursor: auto;
+  transform-origin: center;
+  transition: all 0.4s ease;
+}
+/* Button animation and styling*/
+svg.ButtonSvg {
+  
+  border-radius: 100%;
+  background-color: #FF6B6B;
+  color: #FF6B6B;
+  transition: 200ms;
+  box-shadow:-1px -1px 40px 15px  #FFA1A1 ;
+}
+svg.ButtonSvg:hover {
+  transform: scale(1.15);
+  transition: 200ms;
+}
+svg.ButtonSvg:active {
+  transform: scale(0.85);
+}
+/* Upgrade Button Styling Section   */
+.upgrades {
+    /* background-color:rgb(70, 79, 87); */
+    width:850px;
+    padding: 5px;
+    border-radius: 10px;
+  /* border-color: black; */
+  /* border-width: 2.5px; */
+  top:-125px;
+  left:50%;
+  position: relative;
+  transform:translateX(-50%);
+  z-index: 0;
+
+}
+.AutoButton{
+    background-color:rgb(255, 255, 255);
+    overflow-x: hidden;
+    max-width: 100px;
+    top:20px;
+    position: relative;
+    left:0%;
+    transform:translateX(-50%);
+}
+/* 
+Primary colors: #FF6B6B (red), #FFE66D (yellow), #50FFB1 (green), #4A4AFF (blue)
+Secondary colors: #FFA1A1 (lighter red), #FFF0A5 (lighter yellow), #A1FFD7 (lighter green), 
+#A1A1FF (lighter blue) */
+.Multi{
+  position: relative;
+  color: rgb(11, 249, 11);
+  left:-30%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 100px;
+  font-size: 11px;
+  z-index: 1;
+  height:60px;
+  overflow:hidden;
+  white-space: nowrap;
+  
+
+}
+.cost{
+  margin-bottom:4px;
+  color:white;
+  font-size: 15px;
+  margin-top: 0px;
+  border-radius: 5px;
+  text-align: left;
+  border:solid black;
+  height:60px;
+  padding: 5px;
+  
+  background-color: rgb(70, 79, 87);
+  z-index: 1;
+  
+}
+
+.upgradeError{
+  background-image: url('./x.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: red;
+  font-size: 15px;
+  box-shadow: #FF6B6B;
+  border-radius: 5px;
+  text-align: left;
+  border:solid black;
+  height:60px;
+  z-index: 3;
+  position: relative;
+  animation: shake .7s;  
+}
+@keyframes shake{
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-10px); }
+  20% { transform: translateX(10px); }
+  30% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  60% { transform: translateX(10px); }
+  70% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  90% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+
+.errorSvg{
+  color:blue
+}
+
+@media(max-width:640px){
+  .upgrades{
+    max-width: 400px;
+    margin: 10 0;
+  }
+  .CountDisplay{
+    max-width: 300px;
+  }
+  .GameContainer{
+    max-width: 300px;
+  }
+  .AutoButtonPosition{
+    max-width: 225px;
+    position: static;
+    margin-top:200px;
+    top:auto;
+    left:auto;
+    transform: none;
+    margin-top: 10px;
+    z-index: 1;
+    bottom: -150px;
+   
+
+
+  }
+}
+.stats{
+  border:solid black;
+  border-radius:5px;
+  border-width: 3.5px;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding:5px;
+  color:white
+}
+.ButtonPerSecondUpgrades{
+  margin:10px;
+  color:white;
+  font-size: 15px;
+  margin-top: 0px;
+  border-radius: 5px;
+  text-align: left;
+  border:solid black;
+  height:60px;
+  padding: 5px;
+  max-width:100px;
+  
+  background-color: rgb(70, 79, 87);
+}
+.AutoButtonCost{
+  margin-bottom:4px;
+  color:rgb(0, 0, 0);
+  font-size: 15px;
+  margin-top: 0px;
+  border-radius: 5px;
+  text-align: left;
+  border:solid black;
+  height:60px;
+  padding: 5px;
+  max-width: 205px;
+  background-color: rgb(45, 176, 8);
+  z-index: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.AutoButtonPosition{
+  padding: 0 10px;
+  overflow: hidden;
+  margin-right:10px;
+  position: relative;
+  top: -300px;
+  left:50%;
+  transform: translateX(-50% );
+  z-index: 0;
+}
+.v2{
+  color:black
+}
+.AutoButton{
+  background: none; 
+  position: relative;
+  top: -35px;
+  left:125%;
+  left:65%;
+  transform: translateX(-50%);
+  width:125px;
+}
+.LastAutoUpgrade{
+  /* color:white;
+  max-width: 125px;
+  background-color: rgb(0, 0, 0);
+  font-size: 15px;
+  box-shadow: #FF6B6B;
+  border-radius: 5px;
+  text-align: left;
+  border:solid black;
+  height:90px;
+  z-index: 3; */
+  /* overflow: hidden; */
+  
+  
+  position: relative;
+  
+}
+.LastAutoCLass{
+  color:white;
+  
+  background-color: rgb(149, 42, 42);
+  /* font-size: 14px;
+  box-shadow: #FF6B6B;
+  border-radius: 5px;
+  text-align: left;
+  border:solid black;
+  height:80px;
+  z-index: 3;
+  
+  /* overflow: hidden */
+  left:50%;
+  top: 50%;
+  transform: translateX(-50%);
+  /* width:125px; */
+  position: relative;
+   
+}
+.message{
+  font-weight: 800;
+  position: relative;
+  top:0px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.fullGrad{
+
+/* background-color: #6666b1; */
+
+background-color: #e5e5f7;
+opacity: 0.8;
+background-image: linear-gradient(-45deg, #e5e5f7, #e5e5f7 50%, #b7b9d5 50%, #b7b9d5);
+background-size: 6px 6px;
+height: 100%; /* set height to 100% to fill the viewport */
+}
+.footer{
+  text-align: center;
+  padding: 5px;
+  height:150px;  
+  width:100%;
+  left: 50%;
+  bottom:0px;
+  transform: translateX(-50%);
+  position: relative;
+  background-color: rgb(71, 68, 68);
+  
+}
+.githubLink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  */
