@@ -146,7 +146,7 @@ export const Start = () => {
       
 
           
-      {GameOver && <div className="GameFinished">Game Over As of Now No More Updates</div>}
+      {GameOver && <div className="GameFinished">Congratulations You have Pressed Every Button The Game Has To Offer!</div>}
           <div className="GameContainer">
         <div className="CountDisplay">
           <div className="Value">
@@ -159,21 +159,23 @@ export const Start = () => {
           <p>Buttons Per Second: {ButtonPerSecond ?formatCost(ButtonPerSecond) : ButtonPerSecond.toFixed(2)}</p>
         </div>
 
-<div onClick={() => AutoButtonUpgrade(currentItem)} className="AutoButton">
+<div  className="AutoButton">
   {!nextUpgrade &&(
           
     <Message /> 
     
     )}
-        <button   className={ !nextUpgrade ? 'LastAutoUpgrade': 'LastAutoCLass'}>
-          <span>
+        <button onClick={() => AutoButtonUpgrade(currentItem)}    className={ !nextUpgrade ? 'LastAutoUpgrade': 'LastAutoCLass'}>
+          
             <p>
+
               Cost: {formatCost(currentUpgrade.cost)}
-              </p>
+            </p>
+              
          <p>
           Per Second Increase:{currentUpgrade.autoincrease}s
           </p>
-            </span>
+            
           </button>
       </div>
 
