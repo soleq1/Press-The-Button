@@ -158,14 +158,13 @@ export const Start = () => {
           <p>Buttons per Click: {formatCost(ButtonPerClick)}</p>
           <p>Buttons Per Second: {ButtonPerSecond ?formatCost(ButtonPerSecond) : ButtonPerSecond.toFixed(2)}</p>
         </div>
-      </div>
 
 <div onClick={() => AutoButtonUpgrade(currentItem)} className="AutoButton">
-        {!nextUpgrade &&(
+  {!nextUpgrade &&(
           
-          <Message /> 
-          
-        )}
+    <Message /> 
+    
+    )}
         <button   className={ !nextUpgrade ? 'LastAutoUpgrade': 'LastAutoCLass'}>
           <span>
             <p>
@@ -178,6 +177,7 @@ export const Start = () => {
           </button>
       </div>
 
+    </div>
 <div className="GameButtonPosition">
         <button className="buttonpos" onClick={increment}>
           <svg
