@@ -17,6 +17,7 @@
     width: 500px;
     box-shadow: -1px -1px 40px 1px rgb(2, 94, 255);
     border-radius:10px;
+    height:180px;
     
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     
@@ -98,6 +99,7 @@ svg.ButtonSvg:active {
     position: relative;
     left:0%;
     transform:translateX(-50%);
+    border-radius: 10px;
 }
 /* 
 Primary colors: #FF6B6B (red), #FFE66D (yellow), #50FFB1 (green), #4A4AFF (blue)
@@ -251,9 +253,9 @@ Secondary colors: #FFA1A1 (lighter red), #FFF0A5 (lighter yellow), #A1FFD7 (ligh
 .AutoButton{
   background: none; 
   position: relative;
-  top: -35px;
-  left:125%;
-  left:65%;
+  top: -80px;
+  
+  left:85%;
   transform: translateX(-50%);
   width:125px;
 }
