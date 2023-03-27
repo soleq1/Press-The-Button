@@ -1,5 +1,5 @@
 export const ButtonCost = [
-  { cost: 1, value: 1124124124124.5 },
+  { cost: 1, value: 1.5 },
   { cost: 225, value: 5.25 },
   { cost: 1350, value: 150.75 },
   { cost: 6840, value: 350.175 },
