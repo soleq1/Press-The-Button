@@ -104,9 +104,9 @@ export const Start = () => {
     }
     
     // setCurrentItem(currentItem + 1)
-    console.log(currentItemCost)
-    console.log(currentUpgrade.value);
-    console.log(currentUpgrade.cost)
+    // console.log(currentItemCost)
+    // console.log(currentUpgrade.value);
+    // console.log(currentUpgrade.cost)
   };
   // --------------------- //
   // All Upgrade buttons and the formatting //
@@ -159,12 +159,12 @@ export const Start = () => {
           <p>Buttons Per Second: {ButtonPerSecond ?formatCost(ButtonPerSecond) : ButtonPerSecond.toFixed(2)}</p>
         </div>
 
-<div  className="AutoButton">
   {!nextUpgrade &&(
           
     <Message /> 
     
     )}
+<div  className="AutoButton">
         <button onClick={() => AutoButtonUpgrade(currentItem)}    className={ !nextUpgrade ? 'LastAutoUpgrade': 'LastAutoCLass'}>
           
             <p>
