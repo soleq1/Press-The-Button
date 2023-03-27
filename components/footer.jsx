@@ -4,7 +4,7 @@ export const Footer = () => {
     <div className="footer">
       <p>Built By Edward</p>
 
-      <a href="" className="githubLink">
+      <a href="https://github.com/soleq1/Press-The-Button" className="githubLink">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
