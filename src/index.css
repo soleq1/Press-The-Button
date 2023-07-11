@@ -55,6 +55,9 @@
 .buttonpos {
     z-index: 5;
   position: relative;
+     -moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
     top:150px;
     left:50%;
     transform:translateX(-50%);
